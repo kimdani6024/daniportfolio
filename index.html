@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="js/script.js" defer></script>
+    <title>김단이 포트폴리오</title>
+  </head>
+  <body>
+    <!-- #site-nav -->
+    <nav id="nav" class="nav__defalut">
+      <div class="container">
+        <div class="nav__logo">
+          <a href="#header" class="logo_link">
+            <!-- <img src="./img/logo.png" alt="로고이미지" class="logo_img"> -->
+          </a>
+        </div>
+        <input type="checkbox" class="nav__checkbox" id="mobile_nav--toggle" />
+        <label for="mobile_nav--toggle" class="nav__toggle-btn">
+          <span class="material-icons-outlined menu_icon"> menu </span>
+          <span class="material-icons-outlined close_icon"> close </span>
+        </label>
+        <ul class="nav__menu">
+          <li><a href="#header" class="current-menu">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="marker"></div>
+        </ul>
+      </div>
+      <!-- container -->
+    </nav>
+
+    <!-- wrap-1200 -->
+    <div class="wrap-1200">
+      <!-- #header -->
+      <header id="header" class="section-flag">
+        <div class="container">
+          <figure class="title_photo scale-in-center">
+            <img
+              class="slide-up-down"
+              src="./img/title_img.png"
+              alt="타이틀_이미지"
+            />
+          </figure>
+          <div class="header__column_left slide-right">
+            <hgroup class="home-title">
+              <h2 class="main-title title__first">안녕하세요</h2>
+              <h2 class="main-title title__second">반갑습니다</h2>
+              <h1 class="sub-title">항상 배움의 자세로 성장하는 개발자 김단이입니다.</h1>
+            </hgroup>
+            <button
+              class="btn_go-to-work btn_hover"
+              onclick="location.href='index.html#work'"
+            >
+              <span> SEE MY WORK</span>
+            </button>
+          </div>
+        </div>
+        <!-- container -->
+      </header>
+    </div>
+    <!-- main -->
+    <main id="main">
+      <div class="wrap-1200">
+        <!-- profile -->
+        <section class="category-section section-flag" id="profile">
+          <h2 class="category-title">Profile</h2>
+          <div class="box-component box_profile">
+            <div class="box_profile__row">
+              <figure class="profile__photo">
+                <img src="img/profile_img.jpg" alt="프로필_이미지" />
+              </figure>
+              <div class="profile__headline">
+                <span class="greeting">
+                  변화를<br />
+                  두려워 하지않는<br />
+                  개발자
+                </span>
+              </div>
+            </div>
+            <div class="box_profile__row">
+              <div class="profile__introduction">
+                <span> '느린 것을 두려워 말고, 멈추는 것을 두려워하라' </span
+                >라는 말이 있습니다.<br />
+                어떤 분야든 배움에는 끝이 없습니다. <br />
+                겸손의 자세로 배움을 게을리하지 않고,<br />
+                빠르게 변화하는 트렌드에 맞춰 발전하는<br />
+                개발자가 되겠습니다.
+              </div>
+              <div class="profile__info">
+                <p>
+                  <span>나이</span>
+                  1998. 09. 19
+                </p>
+                <p>
+                  <span>E-mail</span>
+                  kimdani6024&#64;gmail.com
+                </p>
+                <p>
+                  <span>학력</span>
+                  가천대 컴퓨터공학과
+                </p>
+              </div>
+              <div class="profile__skill">
+                <h3>Skills</h3>
+                <ul class="profile__skill-icon">
+                  <li>
+                    <img src="./img/skill_icon_01.png" alt="HTML_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_02.png" alt="CSS_아이콘" />
+                  </li>
+                  <li>
+                    <img
+                      src="./img/skill_icon_03.png"
+                      alt="자바스크립트_아이콘"
+                    />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_04.png" alt="node.js_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_09.png" alt="아두이노_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_10.png" alt="java_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_11.png" alt="파이썬_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_12.png" alt="파이썬_아이콘" />
+                  </li>
+                </ul>
+                <h3>DB</h3>
+                <ul class="profile__skill-icon">
+                  <li>
+                    <img src="./img/skill_icon_05.png" alt="포토샵_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_06.png" alt="일러스트레이터_아이콘" />
+                  </li>
+                  <li>
+                    <img src="./img/skill_icon_07.png" alt="마야_아이콘" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- work -->
+        <section class="category-section section-flag" id="work">
+          <h2 class="category-title">Work</h2>
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://daniwetube.fly.dev/"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_02.png"
+                  alt="유튜브 클론"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>유튜브 클론</h3>
+                  <ul>
+                    <li>Skills : NodeJS, Express, Mongoose + Mongo, ES6 + SCSS</li>
+                    <li>
+                      주요 기능: 비디오 CRUD, 비디오 녹화 후 비디오와 썸네일 다운, 검색, 댓글, 조회수감지, 사용자 인증 및 프로필, 회원가입, 로그인, 로그아웃, 비밀번호 찾기 
+                    </li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://daniwetube.fly.dev/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 2. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://github.com/kimdani6024/python"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_03.png"
+                  alt="나만의 백신 인증서 홈페이지 제작"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>Web Scrapper</h3>
+                  <ul>
+                    <li>Skills : Python, Flask, HTML</li>
+                    <li>주요 기능: 웹 서버, 검색 기능, Export to CSV</li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://github.com/kimdani6024/python')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 3. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href=""
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_05.png"
+                  alt="투두리스트"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>게시판 팀 프로젝트</h3>
+                  <ul>
+                    <li>Skills : Java, Spring Framwork, Oracle</li>
+                    <li>목표: 로그인, 게시글 CRUD, 댓글 CRUD, 첨부파일 CRUD</li>
+                    <li>진행상황 : 65&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 5. box_work -->
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://www.youtube.com/watch?v=hIsC278zQGU&si=52K92i3tLdlPR-0r"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_01.png"
+                  alt="내셔널지오그래픽_홈페이지_썸네일"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>IoT - 스마트화분 팀 프로젝트</h3>
+                  <ul>
+                    <li>Skills : 아두이노, Kotlin</li>
+                    <li>
+                      <주요 기능>
+                      <li>
+                        1. 아두이노를 사용하여 조도, 온습도, 토양 수분값 실시간 측정 > 블루투스를 통해 애플리케이션으로 전송
+                      </li>
+                      <li>
+                        2. 사용자가 식물의 종류, 적정 온도, 조도량, 토양 수분 값 범위 등을 고려하여 조건 설정 > LED 조명과 적정 습도에 도달 시 물 펌프를 제어
+                      </li>
+                      <li>
+                        3. 물통에 물이 부족할 경우 물 부족 알림을 전송하는 기능 구현
+                      </li>
+                    </li>
+                    <li>참여도 : 40&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://www.youtube.com/watch?v=hIsC278zQGU&si=52K92i3tLdlPR-0r')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 1. box_work -->
+
+          <div class="box-component box_work">
+            <figure class="box_work__row">
+              <a
+                class="work__thumbnail"
+                href="https://kimdani6024.github.io/kimdani.github.io/"
+              >
+                <div class="work__img_caption">
+                  <span class="caption">
+                    페이지로 가기
+                    <span class="material-icons"> open_in_new </span>
+                  </span>
+                </div>
+                <img
+                  class="work__thumbnail_img"
+                  src="./img/work_thumb_04.png"
+                  alt="Momentum 클론 코딩"
+                />
+              </a>
+            </figure>
+            <div class="box_work__row">
+              <div class="work__info">
+                <div class="work__introduction">
+                  <h3>자바스크립트 프로젝트</h3>
+                  <ul>
+                    <li>Skills : HTML, CSS, JS</li>
+                    <li>
+                      주요 기능: 투두리스트, 실시간 날씨, 시계, 반응형 웹페이지
+                    </li>
+                    <li>참여도 : 100&#37;</li>
+                  </ul>
+                </div>
+                <button
+                  class="btn_hover work__btn-view"
+                  onclick="window.open('https://kimdani6024.github.io/kimdani.github.io/')"
+                >
+                  VIEW
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 4. box_work -->
+
+        </section>
+        
+
+      <!-- contact -->
+      <div class="wrap__contact">
+        <!-- contact -->
+        <section class="category-section section-flag" id="contact">
+          <div class="box-component box_contact">
+            <figure class="choco-img">
+            </figure>
+            <h2 class="category-title">Contact Me</h2>
+            <address class="contact__address">
+              <img
+                class="icon__mail"
+                src="./img/icon_mail.png"
+                alt="이메일_아이콘"
+              />
+              <span class="email">kimdani6024&#64;gmail.com</span>
+              <ul class="sns__container">
+                <!-- <li class="sns__column">
+                  <span class="address__subtitle">GitHub</span>
+                  <a target="_blank" href="https://github.com/soonmac">
+                    <img src="./img/icon_github.png" alt="깃허브_아이콘" />
+                  </a>
+                </li> -->
+                <li class="sns__column">
+                  <span class="address__subtitle">GitHub</span>
+                  <a
+                    target="_blank"
+                    href="https://github.com/kimdani6024"
+                  >
+                    <img src="./img/icon_github.png" alt="깃허브_아이콘" />
+                  </a>
+                </li>
+                <!-- <li class="sns__column">
+                  <span class="address__subtitle">velog</span>
+                  <a target="_blank" href="https://velog.io/@soonmac">
+                    <img src="./img/icon_velog.png" alt="벨로그_아이콘" />
+                  </a>
+                </li> -->
+              </ul>
+            </address>
+          </div>
+          <!-- box_contact -->
+        </section>
+      </div>
+      <!-- wrap-contact -->
+    </main>
+
+    <footer id="footer">
+      <img src="./img/logo.png" alt="로고_이미지" />
+      <p>
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br />
+        &#169; 2023 Kim Dani. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- 갤러리 오버레이 -->
+    <div id="overlay">
+      <button class="close">
+        <span class="material-icons md-48"> cancel </span>
+      </button>
+      <button id="prev_btn" class="btn">
+        <span class="material-icons md-48"> arrow_back_ios </span>
+      </button>
+      <button id="next_btn" class="btn">
+        <span class="material-icons md-48"> arrow_forward_ios </span>
+      </button>
+      <div class="container">
+        <ul id="slide">
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본1" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본2" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본3" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본4" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본5" />
+          </li>
+          <li>
+            <img class="gallery__big_photo" src="" alt="갤러리_사진_원본6" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  </body>
+</html>
